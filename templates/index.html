@@ -1,0 +1,1296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Preksha Design Studio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Vollkorn:400i" rel="stylesheet">
+    <link rel="stylesheet" href="static/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/jquery-ui.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="static/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="static/css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="static/fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="static/css/aos.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <style>
+  .main_menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  @media (max-width: 991px) {
+    /* line 2, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .main_menu {
+      padding: 15px 0;
+    }
+  }
+
+  /* line 14, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .main_menu:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    z-index: -1;
+    opacity: .9;
+  }
+
+  /* line 25, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .main_menu .navbar {
+    padding: 0px;
+  }
+
+  /* line 28, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .main_menu .navbar .navbar-toggler {
+    border: 0px solid transparent;
+  }
+
+  /* line 31, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .main_menu .navbar .main-menu-item {
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 991px) {
+    /* line 33, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .main_menu .navbar .main-menu-item .navbar-nav {
+      margin-left: 0%;
+      background-color: #fff;
+    }
+  }
+
+  /* line 39, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .main_menu .navbar .main-menu-item .navbar-nav a {
+    padding: 39.5px 22px;
+    font-size: 14px;
+    color: #181919;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  /* line 45, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .main_menu .navbar .main-menu-item .navbar-nav a:hover {
+    color: #E74C3C;
+  }
+
+  @media (max-width: 991px) {
+    /* line 39, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .main_menu .navbar .main-menu-item .navbar-nav a {
+      padding: 10px 22px;
+      color: #000;
+      background-color: #fff;
+      margin-bottom: 2px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 39, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .main_menu .navbar .main-menu-item .navbar-nav a {
+      padding: 30px 20px;
+    }
+  }
+
+  /* line 66, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .dropdown-menu {
+    border: 0px solid rgba(0, 0, 0, 0.15) !important;
+    background-color: #fafafa;
+  }
+
+  /* line 72, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .dropdown .dropdown-menu {
+    transition: all 0.5s;
+    overflow: hidden;
+    transform-origin: top center;
+    transform: scale(1, 0);
+    display: block;
+    margin-top: -1px;
+  }
+
+  /* line 79, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .dropdown .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding: 8px 20px !important;
+  }
+
+  /* line 85, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .dropdown:hover .dropdown-menu {
+    transform: scale(1);
+  }
+
+  @media (max-width: 576px) {
+    /* line 91, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .navbar-brand {
+      max-width: 150px;
+    }
+    /* line 94, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .main_menu .navbar .main-menu-item .navbar-nav a:hover {
+      color: #E74C3C;
+    }
+    /* line 97, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .navbar-collapse {
+      z-index: 9999 !important;
+      position: absolute;
+      left: 0;
+      top: 56px;
+      width: 100%;
+      box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.2);
+    }
+    /* line 105, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .dropdown-menu {
+      border: 0px solid rgba(0, 0, 0, 0.15) !important;
+      background-color: #fff;
+    }
+    /* line 110, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .dropdown .dropdown-menu {
+      transform: scale(1, 0);
+      display: none;
+      margin-top: 0px;
+      text-align: center;
+    }
+    /* line 115, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .dropdown .dropdown-menu .dropdown-item {
+      padding: 10px 15px;
+    }
+    /* line 120, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .dropdown:hover .dropdown-menu {
+      transform: scale(1);
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 128, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .navbar-brand {
+      max-width: 125px;
+    }
+    /* line 131, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .main_menu .navbar .main-menu-item .navbar-nav a:hover {
+      color: #E74C3C;
+    }
+    /* line 134, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .navbar-collapse {
+      z-index: 9999 !important;
+      position: absolute;
+      left: 0;
+      top: 55px;
+      width: 100%;
+      box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.2);
+    }
+    /* line 143, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .dropdown .dropdown-menu {
+      transform: scale(1, 0);
+      display: none;
+      text-align: center;
+    }
+    /* line 149, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .dropdown:hover .dropdown-menu {
+      transform: scale(1);
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 157, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .navbar-brand {
+      max-width: 125px;
+    }
+    /* line 160, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .main_menu .navbar .main-menu-item .navbar-nav a:hover {
+      color: #E74C3C;
+    }
+    /* line 163, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .navbar-collapse {
+      z-index: 9999 !important;
+      position: absolute;
+      left: 0;
+      top: 55px;
+      width: 100%;
+      box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.2);
+    }
+    /* line 172, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .dropdown .dropdown-menu {
+      transform: scale(1, 0);
+      display: none;
+      text-align: center;
+    }
+    /* line 178, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+    .dropdown:hover .dropdown-menu {
+      transform: scale(1);
+      display: block;
+    }
+  }
+
+  /* line 185, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .menu_fixed {
+    position: fixed;
+    z-index: 9999 !important;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  /* line 191, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_menu.scss */
+  .menu_fixed span {
+    color: #000 !important;
+  }
+
+  .banner_part {
+    height: 900px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url(static/images/banner_overlay.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+
+
+  /* line 11, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  @media (max-width: 576px) {
+    /* line 2, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part {
+      height: 500px;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 2, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part {
+      height: 500px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 2, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part {
+      height: 500px;
+    }
+  }
+
+  /* line 30, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_text {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 99;
+    margin-top: 60px;
+  }
+
+  @media (max-width: 991px) {
+    /* line 30, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .banner_text {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+
+  /* line 41, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_text .banner_text_iner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  /* line 45, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_text h5 {
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 25px;
+  }
+
+  @media (max-width: 991px) {
+    /* line 45, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .banner_text h5 {
+      margin-bottom: 10px;
+      font-size:16px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 45, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .banner_text h5 {
+      margin-bottom: 10px;
+    }
+  }
+
+  /* line 60, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_text h2 {
+    font-size: 5vw;
+    line-height: 75px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #fff;
+  }
+
+  @media (max-width: 991px) {
+    /* line 60, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .banner_text h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      line-height: 35px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 60, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .banner_text h2 {
+      font-size: 40px;
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
+  }
+
+  /* line 79, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_text p {
+    color: #f4f4f4;
+    line-height: 2.25;
+    font-size: 16px;
+    margin-top: 46px;
+  }
+
+  @media (max-width: 991px) {
+    /* line 79, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .banner_text p {
+      margin-top: 0;
+      line-height: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 79, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .banner_text p {
+      margin-top: 15px;
+    }
+  }
+
+  /* line 93, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_text .banner_btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 30px;
+  }
+
+  @media (max-width: 991px) {
+    /* line 93, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .banner_text .banner_btn {
+      margin-top: 20px;
+    }
+  }
+
+  /* line 103, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .video_popup {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 95px;
+    height: 95px;
+    text-align: center;
+    padding-top: 102px;
+    padding-left: 34px;
+    z-index: 99 !important;
+    margin: 0 auto;
+  }
+
+  /* line 114, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .video_popup span {
+    width: 95px;
+    height: 95px;
+    background-color: #ff3334;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 82px;
+    padding-left: 5px;
+    font-size: 20px;
+    color: #fff;
+    border: 7px solid #fff;
+    box-shadow: 0px 5px 25.5px 4.5px rgba(20, 48, 58, 0.2);
+  }
+
+  /* line 127, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .video_popup span:hover {
+    background-color: #d8b25a;
+  }
+
+  @media (max-width: 576px) {
+    /* line 103, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .video_popup {
+      top: 100px;
+      padding-top: 70px;
+      padding-left: 0px;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 103, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .video_popup {
+      top: 100px;
+      padding-top: 70px;
+      padding-left: 0px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 103, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+    .banner_part .video_popup {
+      top: 100px;
+      padding-top: 80px;
+      padding-left: 0px;
+    }
+  }
+
+  /* line 149, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_social_icon {
+    position: absolute;
+    transform: rotate(-90deg);
+    z-index: 9999 !important;
+    left: -310px;
+    top: 49%;
+  }
+
+  /* line 155, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_social_icon li {
+    color: #777777;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* line 159, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_social_icon li a {
+    color: #777777;
+  }
+
+  /* line 162, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_social_icon li span {
+    margin-right: 10px;
+  }
+
+  /* line 167, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_social_icon i.fas.fa-circle {
+    font-size: 7px;
+    margin: 0px 10px 0px 20px;
+    color: #ff3334;
+  }
+
+  /* line 172, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .banner_social_icon a:hover {
+    color: #ff3334 !important;
+  }
+
+  /* line 176, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_banner.scss */
+  .banner_part .list-inline-item:not(:last-child) {
+    margin-right: 0px;
+  }
+  .banner_part:after{
+    background: -webkit-linear-gradient(#E74C3C 0%, rgba(18, 1, 248, 0.2) 200%);
+    background: -webkit-linear-gradient(#E74C3C 0%, rgba(18, 1, 248, 0.2) 200%);
+    background: -ms-linear-gradient(#E74C3C 0%, rgba(18, 1, 248, 0.2) 200%);
+  }
+
+  @media (min-width: 768px) {
+.carousel-multi-item-2 .col-md-3 {
+float: left;
+width: 25%;
+max-width: 100%; } }
+
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; }
+
+/* gallery css*/
+body {
+  font-family: "Asap", sans-serif;
+  color:#989898;
+  margin:10px;
+  font-size:16px;
+}
+
+#demo {
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+
+
+.green{
+  background-color:#6fb936;
+}
+        .thumb{
+            margin-bottom: 30px;
+        }
+
+        .page-top{
+            margin-top:85px;
+        }
+
+
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+
+.transition {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+    .modal-header {
+
+     border-bottom: none;
+}
+    .modal-title {
+        color:#000;
+    }
+    .modal-footer{
+      display:none;
+    }
+
+  </style>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+  <header class="main_menu home_menu js-sticky-header site-navbar-target">
+       <div class="container">
+          <div class="row">
+             <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                   <a class="navbar-brand" href="/"> <img src="static/images/vc.png" alt="logo" style="width:10em;height:6em; padding-bottom:20px;"> </a>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse main-menu-item" id="navbarNav">
+                      <ul class="navbar-nav">
+                         <li class="nav-item active">
+                            <a class="nav-link" style="font-size:1rem" href="/">Home</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" style="font-size:1rem" href="#about-section">about</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" style="font-size:1rem" href="#services-section">Services</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" style="font-size:1rem" href="#projects-section">Projects</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" style="font-size:1rem" href="#contact-section">Contact us</a>
+                         </li>
+                      </ul>
+                   </div>
+                </nav>
+             </div>
+          </div>
+       </div>
+    </header>
+
+
+    <section class="banner_part">
+       <div class="container" style="width:auto; text-align:center;">
+          <div class="row">
+             <div class="">
+                <div class="banner_text aling-items-center">
+                   <div class="banner_text_iner">
+                      <h2 style="font-family:Gill Sans Extrabold;sans-serif;">Preksha Design Studio</h2>
+                      <h5>Planners-Architects-Interior Designers</h5>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+
+
+    <section class="site-section" id="about-section" style="padding: 10em 0;">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-6 text-center heading-section mb-5">
+
+            <h2 class="text-black mb-2">About Us </h2>
+            <p>Preksha design studio is an architecture, urban design and interior design firm based in Bengaluru. We are a young design firm with a combined experience of 60+ years. </p>
+          </div>
+        </div>
+
+        <div class="row hover-1-wrap mb-5 mb-lg-0">
+          <div class="col-12">
+            <div class="row">
+              <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-left">
+                <a href="#" class="rotate10">
+                  <img src="static/images/3D View.jpg" alt="Image" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-right">
+                <h2 class="text-black">Our Vision</h2>
+                <p class="mb-4">To be a professional & customer-centric company.</p>
+                <h2 class="text-black">Who we are?</h2>
+                <p class="mb-4">We aspire to provide design solutions rich in innovation, simplicity and practical approach, for built environment that contribute to the sense of well-being and increase the productivity of the end users and make a vast improvement in their lives.</p>
+                <!-- <p><a href="#" class="btn btn-primary">Read More</a></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row hover-1-wrap mb-5 mb-lg-0">
+          <div class="col-12">
+            <div class="row">
+              <div class="mb-4 mb-lg-0 col-lg-6"  data-aos="fade-right">
+                <a href="#" class="rotate-reverse10">
+                  <img src="static/images/Elevation.jpg" alt="Image" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-lg-5 ml-auto align-self-center"  data-aos="fade-left">
+                <h2 class="text-black">Our Aim</h2>
+                <p class="mb-4"> To be recognized as one of the best architects.</p>
+                <h2 class="text-black">What we do?</h2>
+                <p class="mb-4"> Our team possesses high critical thinking skills; intelligent design and thorough involvement in the design build process.</br>Our core team has the experience & expertise in handling large scale residential, commercial, institutional, corporate, hospitality and interior projects all over India in the last 30 years. The team has delivered over 4.0 Million Sq Ft of design projects pan India</p>
+                <!-- <p><a href="#" class="btn btn-primary">Read More</a></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    <!--about us -->
+
+
+    </section>
+
+
+    <section class="site-section " id="services-section" style="padding: 10em 0;">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-6 text-center heading-section mb-5">
+
+            <h2 class="text-black mb-2">Our Services</h2>
+            <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="" style="text-align:center;">
+
+            <div>
+
+              <span class="fas fa-hammer d-block display-3 text-primary mb-3 align-center"></span>
+              <h3>MASTER PLANNING</h3>
+              <!-- <p>A master plan is a dynamic long-term planning document that provides a conceptual layout to guide future growth and development.</br> A master plan includes analysis, recommendations, and proposals for a site’s population, economy, housing, transportation, community facilities, and land use.</p> -->
+            </div>
+
+          </div>
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100" style="text-align:center;">
+            <div>
+              <span class="fas fa-building d-block display-3 text-primary mb-3"></span>
+              <h3>ARCHITECTURE</h3>
+              <!-- <p>Architecture is both the process and the product of planning, designing, and constructing buildings or any other structures.</p> -->
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200" style="text-align:center;">
+            <div>
+              <span class="fas fa-hard-hat d-block display-3 text-primary mb-3"></span>
+              <h3>INTERIOR DESIGN</h3>
+              <!-- <p>Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the spac</p> -->
+            </div>
+          </div>
+
+
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="" style="text-align:center;">
+
+            <div>
+              <span class="	fas fa-tree d-block display-3 text-primary mb-3"></span>
+              <h3>LANDSCAPE DESIGN (Associate partner)</h3>
+              <!-- <p>Landscape design is an independent profession and a design and art tradition, practiced by landscape designers, combining nature and culture.</p> -->
+            </div>
+
+          </div>
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100" style="text-align:center;">
+            <div>
+              <span class="fas fa-tools d-block display-3 text-primary mb-3"></span>
+              <h3>STRUCTURE AND MEP(Associate partner)</h3>
+              <!-- <p> MEP design is important for planning, decision making, accurate documentation, performance- and cost-estimation, construction, and operating/maintaining the resulting facilities.</p> -->
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200" style="text-align:center;">
+            <div>
+              <span class="fas fa-hand-holding-usd d-block display-3 text-primary mb-3"></span>
+              <h3>COST PLANNING</h3>
+              <!-- <p>Cost plan is used as a way of controlling the estimated costs during the design and construction phases of a project.</p> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<!-- testimonials-->
+<!-- gallery-->
+<!--Carousel Wrapper-->
+<section class="site-section " id="projects-section" style="padding: 10em 0;">
+<div class="row justify-content-center" data-aos="fade-up" >
+  <div class="col-lg-6 text-center heading-section mb-5">
+
+    <h2 class="text-black mb-2">Our Projects</h2>
+
+    <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+  </div>
+  <!-- gallery -->
+  <div class="container">
+
+
+
+          <div class="row">
+
+
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a href="static/images/gallery/1.jpg" class="fancybox" rel="ligthbox">
+                      <img  src="static/images/gallery/1.jpg" class="zoom img-fluid "  alt="">
+
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a href="static/images/gallery/2.jpg"  class="fancybox" rel="ligthbox">
+                      <img  src="static/images/gallery/2.jpg" class="zoom img-fluid"  alt="">
+                  </a>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a href="static/images/gallery/3.jpg" class="fancybox" rel="ligthbox">
+                      <img  src="static/images/gallery/3.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a href="static/images/gallery/4.jpg" class="fancybox" rel="ligthbox">
+                      <img  src="static/images/gallery/4.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+              </div>
+
+               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a href="static/images/gallery/5.jpg" class="fancybox" rel="ligthbox">
+                      <img  src="static/images/gallery/5.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+              </div>
+
+               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a href="static/images/gallery/6.jpg" class="fancybox" rel="ligthbox">
+                      <img  src="static/images/gallery/6.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+              </div>
+
+               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a href="static/images/gallery/7.jpg" class="fancybox" rel="ligthbox">
+                      <img  src="static/images/gallery/7.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+              </div>
+
+               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a href="static/images/gallery/8.jpg" class="fancybox" rel="ligthbox">
+                      <img  src="static/images/gallery/8.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                 <a href="static/images/gallery/9.jpg" class="fancybox" rel="ligthbox">
+                     <img  src="static/images/gallery/9.jpg" class="zoom img-fluid "  alt="">
+                 </a>
+             </div>
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="static/images/gallery/10.jpg" class="fancybox" rel="ligthbox">
+                    <img  src="static/images/gallery/10.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+               <a href="static/images/gallery/11.jpg" class="fancybox" rel="ligthbox">
+                   <img  src="static/images/gallery/11.jpg" class="zoom img-fluid "  alt="">
+               </a>
+           </div>
+           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a href="static/images/gallery/12.jpg" class="fancybox" rel="ligthbox">
+                  <img  src="static/images/gallery/12.jpg" class="zoom img-fluid "  alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+             <a href="static/images/gallery/13.jpg" class="fancybox" rel="ligthbox">
+                 <img  src="static/images/gallery/13.jpg" class="zoom img-fluid "  alt="">
+             </a>
+         </div>
+         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="static/images/gallery/14.jpg" class="fancybox" rel="ligthbox">
+                <img  src="static/images/gallery/14.jpg" class="zoom img-fluid "  alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+           <a href="static/images/gallery/15.jpg" class="fancybox" rel="ligthbox">
+               <img  src="static/images/gallery/15.jpg" class="zoom img-fluid "  alt="">
+           </a>
+       </div>
+       <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a href="static/images/gallery/16.jpg" class="fancybox" rel="ligthbox">
+              <img  src="static/images/gallery/16.jpg" class="zoom img-fluid "  alt="">
+          </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+         <a href="static/images/gallery/17.jpg" class="fancybox" rel="ligthbox">
+             <img  src="static/images/gallery/17.jpg" class="zoom img-fluid "  alt="">
+         </a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+        <a href="static/images/gallery/18.jpg" class="fancybox" rel="ligthbox">
+            <img  src="static/images/gallery/18.jpg" class="zoom img-fluid "  alt="">
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+       <a href="static/images/gallery/19.jpg" class="fancybox" rel="ligthbox">
+           <img  src="static/images/gallery/19.jpg" class="zoom img-fluid "  alt="">
+       </a>
+   </div>
+   <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a href="static/images/gallery/20.jpg" class="fancybox" rel="ligthbox">
+          <img  src="static/images/gallery/20.jpg" class="zoom img-fluid "  alt="">
+      </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+     <a href="static/images/gallery/21.jpg" class="fancybox" rel="ligthbox">
+         <img  src="static/images/gallery/21.jpg" class="zoom img-fluid "  alt="">
+     </a>
+ </div>
+ <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+    <a href="static/images/gallery/22.jpg" class="fancybox" rel="ligthbox">
+        <img  src="static/images/gallery/22.jpg" class="zoom img-fluid "  alt="">
+    </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/23.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/23.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/24.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/24.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/25.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/25.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/26.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/26.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/27.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/27.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/28.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/28.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/29.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/29.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/30.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/30.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/31.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/31.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/32.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/32.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/33.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/33.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/34.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/34.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/35.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/35.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/36.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/36.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/37.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/37.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/38.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/38.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/39.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/39.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   <a href="static/images/gallery/40.jpg" class="fancybox" rel="ligthbox">
+       <img  src="static/images/gallery/40.jpg" class="zoom img-fluid "  alt="">
+   </a>
+</div>
+
+
+
+
+         </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+  <!-- gallery end -->
+
+
+<!-- <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel" style="height:auto;min-height:auto;"> -->
+
+
+  <!--Slides-->
+  <!-- <div class="carousel-inner" role="listbox"> -->
+
+    <!--First slide-->
+    <!-- <div class="carousel-item active">
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture1.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture2.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture3.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture4.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+    </div> -->
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <!-- <div class="carousel-item">
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture5.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture6.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture7.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture8.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+    </div> -->
+    <!--/.Second slide-->
+
+    <!--Third slide-->
+    <!-- <div class="carousel-item">
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture9.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture10.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture11.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="static/images/picture12.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+    </div> -->
+    <!--/.Third slide-->
+    <!-- <div class="controls-top">
+      <a class="black-text carousel-control-prev" style="text-decoration: none; color:#E74C3C; " href="#multi-item-example" data-slide="prev"><i class="fas fa-angle-left fa-3x pr-3"></i></a>
+      <a class="black-text carousel-control-next" style="float: right; text-decoration: none;color:#E74C3C;" href="#multi-item-example" data-slide="next"><i class="fas fa-angle-right fa-3x pl-3"></i></a>
+    </div>
+
+  </div> -->
+  <!--/.Slides-->
+  <!--Controls-->
+
+  <!--/.Controls-->
+
+<!-- </div> -->
+<!--/.Carousel Wrapper-->
+</div>
+</section>
+
+
+    <section class="bg-light" id="contact-section" style="padding: 10em 0;">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <form action="/single" method="POST" class="p-5 contact-form">
+
+              <h2 class="h4 mb-5 heading">Contact Form</h2>
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label for="fname">First Name</label>
+                  <input type="text" name="fname" id="fname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label for="lname">Last Name</label>
+                  <input type="text" name="lname" id="lname" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label for="subject">Subject</label>
+                  <input type="subject" name="subject" id="subject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label for="message">Message</label>
+                  <input name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here...">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-dark btn-md text-white">
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="row justify-content-center align-items-center h-100">
+              <div class="col-lg-6 text-center heading-section mb-5 align-self-center">
+
+                <h2 class=" mb-5 text-black">Contact Us</h2>
+                <ul class="list-unstyled text-left address">
+                  <li>
+                    <span class="d-block">Address:</span>
+                    <p>465/A, 15th cross Road,C-303 3rd Floor,<br>Sumukh Vrindavan,Ideal Homes Township,<br>Rajarajeshwari Nagar,Bengaluru-560098</p>
+                  </li>
+                  <li>
+                    <span class="d-block">Phone:</span>
+                    <p>+91 9845641301</p>
+                  </li>
+                  <li>
+                    <span class="d-block">Email:</span>
+                    <p>pdesignstudio7@gmail.com</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="footer-heading mb-4">About Us</h2>
+                <p>Preksha design studio is an architecture, urban design and interior design firm based in Bengaluru.
+                  <br>We are a young design firm with a combined experience of 60+ years.</p>
+              </div>
+              <div class="col-md-3 ml-auto">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#about-section" class="smoothscroll">About Us</a></li>
+                  <!-- <li><a href="#trainers-section" class="smoothscroll">Trainers</a></li> -->
+                  <li><a href="#services-section" class="smoothscroll">Services</a></li>
+                  <!-- <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li> -->
+                  <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h2 class="footer-heading mb-4">Follow Us</h2>
+                <a href="#" class="pl-0 pr-3 social-link"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="pl-3 pr-3 social-link"><span class="fab fa-twitter"></span></a>
+                <a href="#" class="pl-3 pr-3 social-link"><span class="fab fa-instagram"></span></a>
+                <!-- <a href="#" class="pl-3 pr-3 social-link"><span class="icon-linkedin"></span></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="static/images/vc2.png" alt="Image" style="width:20em; height:10em">
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/jquery-ui.js"></script>
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/jquery.countdown.min.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+  <script src="static/js/aos.js"></script>
+  <script src="static/js/jquery.fancybox.min.js"></script>
+  <script src="static/js/jquery.sticky.js"></script>
+  <script src="static/js/isotope.pkgd.min.js"></script>
+  <script src="static/js/main.js"></script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+$(document).ready(function(){
+$(".fancybox").fancybox({
+      openEffect: "none",
+      closeEffect: "none"
+  });
+
+  $(".zoom").hover(function(){
+
+  $(this).addClass('transition');
+}, function(){
+
+  $(this).removeClass('transition');
+});
+});
+</script>
+
+  </body>
+</html>
